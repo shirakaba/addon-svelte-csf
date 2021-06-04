@@ -20,7 +20,7 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "build": "babel ./src --out-dir ./dist --extensions .ts --extensions .js --copy-files",
-    "prepublish": "npm run clean && npm run build",
+    "prepare": "npm run clean && npm run build",
     "test": "jest",
     "lint": "eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.json,.html,.ts,.tsx,.mjs --report-unused-disable-directives",
     "storybook": "start-storybook -p 6006",
